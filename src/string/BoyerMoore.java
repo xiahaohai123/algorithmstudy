@@ -137,7 +137,11 @@ public class BoyerMoore {
             int j = pLength - 1;
             while (j >= 0) {
                 if (pattern[j] != mainStr[i + j]) {
-                    i += moveByGS(j, pLength, suffix, prefix);
+                    if (j < pLength - 1) {
+                        i += moveByGS(j, pLength, suffix, prefix);
+                    } else {
+                        i++;
+                    }
                     break;
                 }
                 j--;
