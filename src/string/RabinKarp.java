@@ -1,6 +1,5 @@
 package string;
 
-import java.nio.IntBuffer;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -12,18 +11,6 @@ import java.util.Map;
  * 此demo仅使用小写字母，所以使用26进制
  */
 public class RabinKarp {
-
-    static class TestCase {
-        String mainStr;
-        String pattern;
-        Object want;
-
-        public TestCase(String mainStr, String pattern, Object want) {
-            this.mainStr = mainStr;
-            this.pattern = pattern;
-            this.want = want;
-        }
-    }
 
     public static void main(String[] args) {
         List<TestCase> testCaseList = new ArrayList<>();
